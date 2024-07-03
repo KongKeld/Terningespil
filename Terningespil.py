@@ -1,7 +1,7 @@
 import random
 
 AntalPoint = 0
-cnt=''
+count=''
 
 def Slaa():
     min_vaerdi = 1
@@ -10,14 +10,14 @@ def Slaa():
     
     return Slaa
 
-while cnt != 'n' and AntalPoint < 50:
+while count != 'n' and AntalPoint < 50:
     Slag = Slaa()
     print("Du slog: ",Slag)
     AntalPoint += Slag
     print("Du har ialt",AntalPoint)
     print("------------------")
-    cnt = input("Vil du fortsætte (j/n): ").upper()
-    if cnt in ('j','n'):
+    count = input("Vil du fortsætte (j/n): ").upper()
+    if count in ('j','n'):
         break
     else:
         print('OK')
