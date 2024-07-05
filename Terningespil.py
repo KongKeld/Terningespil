@@ -1,18 +1,12 @@
-import random
+import Terning
 
 PointBank=0
 AntalPoint = 0
 count=''
 
-def Slaa():
-    min_vaerdi = 1
-    max_vaerdi = 6
-    Slaa = random.randint(min_vaerdi, max_vaerdi)
-    
-    return Slaa
 
 while count != 'n' and AntalPoint + PointBank < 50:
-    Slag = Slaa()
+    Slag = Terning.Slaa()
     print("Du slog: ",Slag)
      
     if Slag == 1:
