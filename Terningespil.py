@@ -6,7 +6,7 @@ count=''
 
 
 while count != 'n' and AntalPoint + PointBank < 50:
-    Slag = Terning.Slaa()
+    Slag = Terning.Slaa(1,6)
     print("Du slog: ",Slag)
      
     if Slag == 1:
