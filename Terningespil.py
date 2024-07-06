@@ -1,3 +1,7 @@
+# Dette program kører terning-spillet for en person. 
+# Tager personens navn som indput 
+# Returnerer resultatet af runden når brugeren vvælger at stoppe, eller 0 hvis der slåes en 1'er
+
 import Terning
 
 PointBank=0
