@@ -12,6 +12,8 @@ print('Hej')
 
 PointBank+=Terningespil.spil()
 
+print("Du har",PointBank,"point i banken")
+
 
 print("Spillet er slut")
 

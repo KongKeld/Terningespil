@@ -17,18 +17,14 @@ def spil():
         
         if Slag == 1:
             AntalPoint=0
-            print("Du har ialt",AntalPoint)
-            print("------------------")
+            PrintPoint(AntalPoint)
             Igang=False
             break
         
         else:
             AntalPoint += Slag
-            print("Du har ialt",AntalPoint)
-            print("------------------")
+            PrintPoint(AntalPoint)
 
-            if AntalPoint >= 50:
-                break
             while True:
                 count = input("Vil du fortsætte (j/n): ").lower()
                 if count in ('j','n'):
@@ -39,4 +35,10 @@ def spil():
                 Igang=False
                 break
 
+    print("Du fik",AntalPoint,"i denne omgang")
     return AntalPoint
+
+
+def PrintPoint(AntalPoint):
+    print("Du har ialt",AntalPoint)
+    print("------------------")
