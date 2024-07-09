@@ -5,11 +5,11 @@
 import Terning
 
 
-AntalPoint = 0
-count=''
-Igang=True
 
 def spil():
+    AntalPoint = 0
+    count=''
+    Igang=True
     while Igang:
         Slag = Terning.Slaa(1,6)
         print('----------------------')
@@ -20,7 +20,8 @@ def spil():
             print("Du har ialt",AntalPoint)
             print("------------------")
             Igang=False
-
+            break
+        
         else:
             AntalPoint += Slag
             print("Du har ialt",AntalPoint)
@@ -36,3 +37,6 @@ def spil():
                     print('WHAT??????????????')
             if count=='n':
                 Igang=False
+                break
+
+    return AntalPoint

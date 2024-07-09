@@ -13,3 +13,6 @@ print('Hej')
 PointBank+=Terningespil.spil()
 
 
+print("Spillet er slut")
+
+
