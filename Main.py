@@ -5,7 +5,7 @@
 
 import Terningespil
 PointBank=0
-Igang=True
+
 
 print('Hej')
 #Terningespil.spil()
