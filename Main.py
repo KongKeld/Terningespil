@@ -33,9 +33,9 @@ while not vinder:
         if Spillere[i][1] >= 10:
             print("Wow nogen har vundet!")
             vinder=True
-            break
         else:
             runde+=1
+    if vinder == True: break
 
 
 # To forskellige måder at udskrive listen på (Den sidste er pænest)
