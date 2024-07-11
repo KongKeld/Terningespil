@@ -2,7 +2,7 @@
 # Det håndterer også hvormange poient hver spilelr har undervejs
 # Den kårer en vinder når der er nået 50 poient
 
-
+import time
 import Terningespil
 i=0
 print("**************************************")
@@ -23,12 +23,17 @@ print(Spillere)
 vinder=False
 runde=1
 while not vinder:
-    print(f"Runde {runde}:")
-
+    print("**************************************")
+    print(f"**         Runde {runde}:          **")
+    print("**************************************")
     # Spil runde 1 (Mangler at lave en løkke der kører indtil en spiller når max)
     for i, Person in enumerate(Spillere):
+        print(f"Spiller {Person[i]} kaster")
+        for _ in range(3):
+            print('.')
+            time.sleep(1)
         Spillere[i][1] = Terningespil.spil()
-        print(f"{i+1}. {Person[0]}: {Person[1]}")
+       # print(f"{i+1}. {Person[0]}: {Person[1]}")
 
         if Spillere[i][1] >= 10:
             print("Wow nogen har vundet!")
